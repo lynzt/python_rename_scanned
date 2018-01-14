@@ -13,12 +13,13 @@ def get_dir_files(path):
 
 def rename_files(files, starting_nbr, tmp_dir):
     for filename in files:
+        starting_nbr += 1 # just incase i forget to bump the nbr...
         print ('renaming {}'.format(filename))
         file_utils.move_file(tmp_dir + filename, tmp_dir + 'scan_' + str(starting_nbr) + '.jpeg')
-        starting_nbr += 1
+
 
 def main():
-    starting_nbr = 100789 # this could be figured out... meh
+    starting_nbr = 100844 # this could be figured out... meh
     tmp_dir = '/tmp/'
 
     files = get_dir_files(tmp_dir)

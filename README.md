@@ -2,7 +2,7 @@
 
 This is a script to rename files that were auto-named by a scanner.
 Takes filename like: Scan.jpeg / Scan 1.jpeg
-Renames to: scan_<number>.jpeg
+Renames to: scan_########s.jpeg
 
 
 ## Running
