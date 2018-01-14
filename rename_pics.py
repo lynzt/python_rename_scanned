@@ -18,7 +18,7 @@ def rename_files(files, starting_nbr, tmp_dir):
         starting_nbr += 1
 
 def main():
-    starting_nbr = 100761 # this could be figured out... meh
+    starting_nbr = 100789 # this could be figured out... meh
     tmp_dir = '/tmp/'
 
     files = get_dir_files(tmp_dir)
@@ -26,5 +26,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# docker run -it --rm -v "$PWD":/usr/src/app -v "/Users/lynzt/Pictures/scanned":/tmp py/rename python3 ./rename_pics.py
